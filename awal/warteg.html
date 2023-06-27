@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="warteg.css">
+    <title>Warteg Rizqi</title>
+</head>
+<body>
+
+    <!--navbar start-->
+    <div class="main">
+        <div class="navbar">
+            <img src="/assets/logo1.4.png" alt="">
+            <ul>
+                <li><a href="/awal/warteg.html" >Home</a></li>
+                <li><a href="/menu/menu.html">Menu</a></li>
+                <li><a href="/about/about.html">About Us</a></li>
+                <li><a href="/contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+      
+    <!--header start-->
+        <div class="isi">
+            <h1>Hi Orang Lapar :)</h1>
+            <p class="kata1">Cari makanan enak dan bikin kenyang ?</p>
+            <p class="kata2">Warteg Rizqi memberikan <strong style="color: sandybrown;">kepuasan</strong > bukan <strong style="color: sandybrown;">kebohongan</strong> </p>
+            <div>
+               <button id="tmbl" type="button"><a href="/menu/menu.html">Lihat Menu</a></button>
+            </div>   
+        </div>
+    <!--header end-->
+    </div>
+    <!--navbar end-->
+
+    <!--slider start-->
+    <div class="slider">
+        <div class="slide">
+          <img src="/assets/slideayam.png" alt="ayam">
+        </div>
+        <div class="slide">
+          <img src="/assets/slidemie.png" alt="mie">
+        </div>
+        <div class="slide">
+          <img src="/assets/slidesup.png" alt="sup">
+        </div>
+        <div class="slide">
+          <img src="/assets/slidecap.png" alt="capcay">
+        </div>
+        <div class="slide">
+          <img src="/assets/slidegempal.png" alt="bakso">
+        </div>
+        <div class="slide">
+          <img src="/assets/slideikan.png" alt="ikan">
+        </div>
+        <div class="navigation">
+          <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+          <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+        </div>
+      </div>
+  
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+  
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+  
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slide");
+          if (n > slides.length)
+          {
+            slideIndex = 1;
+          }
+          if (n < 1)
+          {
+            slideIndex = slides.length
+          }
+          for (i = 0; i < slides.length; i++)
+          {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+        }
+      </script>
+    <!--slider end-->
+
+    <!--table start-->
+    <div class="meja">
+      <h1>Informasi Pemesanan Meja</h1>
+      <p>Kamu bisa melihat ketersediaan meja di warteg kami, jika ingin memesan meja harap menghubungi melalui menu</p>  
+      <p><a href="/contact/contact.html" style="color: sandybrown;">  contact </a></p>
+    </div>
+        
+    </section>
+    <div class="table-box">
+      <div class="table-row table-head">
+          <div class="table-cell first-cell">
+              <p>Kategori Meja</p>
+          </div>
+          <div class="table-cell">
+              <p>Keterangan</p>
+          </div>
+          <div class="table-cell last-cell">
+              <p>Status</p>
+          </div> 
+      </div>
+
+      <div class="table-row">
+          <div class="table-cell first-cell">
+              <p>Single Table</p>
+          </div>
+          <div class="table-cell">
+              <p>1 meja</p>
+              <p>Cocok buat kamu yang jomblo</p>
+          </div>
+          <div class="table-cell last-cell">
+             <p>Sisa 2 meja</p>
+          </div>   
+      </div>
+
+      <div class="table-row">
+          <div class="table-cell first-cell">
+              <p>Double Table</p>
+          </div>
+          <div class="table-cell">
+            <p>2 meja</p>
+            <p>Cocok buat satu keluarga bahagia</p>
+          </div>
+          <div class="table-cell last-cell">
+            <p>Sisa 4 meja</p>
+          </div>
+      </div>
+
+      <div class="table-row">
+          <div class="table-cell first-cell">
+              <p>Bucin Table</p>
+          </div>
+          <div class="table-cell">
+            <p>1 meja, 1 vas bunga</p>
+            <p>Cocok buat kamu sama pacar</p>
+          </div>
+          <div class="table-cell last-cell">
+            <p>Full</p>
+          </div>
+      </div>
+
+      <div class="table-row">
+          <div class="table-cell first-cell">
+              <p>Group Table</p>
+          </div>
+          <div class="table-cell">
+            <p>3 meja</p>
+            <p>Cocok buat kumpul rame-rame</p>
+          </div>
+          <div class="table-cell last-cell">
+            <p>Full</p>
+          </div>
+      </div> 
+    <!--table end-->
+
+  
+</body>
+</html>

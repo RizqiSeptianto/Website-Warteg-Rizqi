@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+}
+
+/*css navbar*/
+.main {
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url("head 1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width: 768px) {
+    .main {
+        height: 350vh;
+    }
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img {
+    width: 200px;
+}
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a {
+    color: white;
+    text-transform:uppercase ;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: sandybrown;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s ease;
+    
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/*css about*/
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+}
+.head h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.head h1:before {
+    content: "";
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff7720;
+}
+.head p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.head #kata1 {
+    margin-bottom: 0px;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.img img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    transition: .5s ease
+}
+.img img:hover {
+    transform: scale(1.1);
+}
+.isi-about {
+    flex: 1;
+}
+.isi-about h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+.isi-about p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.isi-about .more {
+    display: inline-block;
+    padding: 10px;
+    background-color: sandybrown;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: .3s ease;
+}
+.isi-about .more:hover {
+    background-color: white;
+    color: sandybrown;
+}
+/*responsive css about*/
+@media screen and (max-width: 768px){
+    .head{
+        padding: 0px 20px;
+    }
+    .head h1 {
+        font-size: 36px;
+    }
+    .head p {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container {
+        padding: 0px;
+    }
+    .about {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .img {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .isi-about {
+        padding: 0px;
+        font-size: 16px;
+    }
+    .isi-about .more {
+        font-size: 12px;
+    }
+}
+
+/*css team*/
+.header{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 40px;
+    margin: 100px 0;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.header::before{
+    content: "";
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff7720;
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.person{
+    flex: 1 1 250px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    cursor: pointer;
+    max-width: 300px;
+    transition: all 0.3s;
+}
+
+.person:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-20px);
+}
+
+.person img{
+    display: block;
+    width: 150px; height: 150px;
+    object-fit: cover;
+    border:4px solid sandybrown;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.person h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: sandybrown;
+    margin: 15px 0;
+}
+
+.person p{
+    font-size: 15px;
+    color: white;
+    line-height: 1.6;
+}
